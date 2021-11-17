@@ -1,0 +1,303 @@
+/* Font families */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* Font families */
+
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* navbar */
+#section-navbar{
+    width: 100vw;
+    height: 6vh;
+    background-color: transparent;
+    position: fixed;
+    font-family: 'Architects Daughter', cursive;
+    position: absolute;
+}
+
+.navBar{
+    color: rgb(241, 205, 0);
+    display: flex;
+    align-items: center;
+    margin-left: 16vw;
+    font-size: 1.2rem;
+}
+
+.navBarEl{
+    margin: 1.5rem 1rem 1rem 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navBarEl:hover {
+    /* transform: scale(1.2); */
+    transform: translateY(-5px) scale(1.1);
+    transition: 0.6s;
+}
+
+
+/*--------------------*/
+
+/* Section-1 */
+
+#section-1{
+    box-sizing: border-box;
+    background-image: url('./section-1.jpg');
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 77vh;
+    left: 25vw;
+    opacity: 0;
+    height: 15rem;
+    font-family: 'Philosopher', sans-serif;
+    color: rgb(70, 70, 70);
+    transition: 1s;
+}
+.intro.after{
+    content: '';
+    transition: 2s;
+    display: flex;
+    opacity: 1;
+    transform: translateY(-10vh);
+}
+
+.mainIntro{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgb(56, 54, 54);
+}
+.subIntro{
+    font-size: 1.3rem;
+    width: 70%;
+    /* text-shadow: 1px 1px 0.5px rgb(32, 196, 141); */
+}
+/* ------------------------------ */
+
+/* Section-2 */
+
+#section-2{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.section-2-container{
+    background-image: url('./section-2.jpg');
+    opacity: 0.9;
+    filter: brightness(10%) ;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+}
+
+.left{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    background-image: url('./dudu.jpeg');
+    height: 45vh;
+    width: 22vw;
+    background-size: cover;
+    left: 0vw;
+    top: 125vh;
+    border-radius: 10px;
+    box-shadow: #c9c6c6 5px 5px 10px;
+    transition: 3s;
+}
+
+.left.added{
+    transform: translateX(10vw);
+    /* left: 10vw; */
+    opacity: 1;
+}
+
+.right{
+    color: rgb(228, 222, 222);
+    position: absolute;
+    z-index: 1;
+    /* padding-top: 20px; */
+    height: 45vh;
+    width: 40vw;
+    right: -20vw;
+    top: 125vh;
+    opacity: 0;
+    transition: 3s;
+}
+.right h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* position: absolute; */
+    font-size: 2rem;
+    margin-top: 0;
+    /* transform: translateX(10vw); */
+}
+
+.right.added{
+    transform: translateX(-30vw);
+    opacity: 1;
+}
+.right p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.right button{
+    margin-top: 2rem;
+    background-color: transparent;
+    color: rgb(255, 253, 110);
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 7px;
+    border-color:  rgb(255, 253, 110) ;
+    font-family: 'Roboto', sans-serif;
+}
+.right button:hover{
+    background: linear-gradient(to right, #fffc00, #fde991);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right button a:hover{
+    background: linear-gradient(to right, #fffc00, #fde991);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right button a{
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(255, 253, 110);
+    height: 100%;
+    width: 100%;
+}
+/* ------------------------------ */
+
+/* Section-3 */
+
+#section-3{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #191b1b, #383a3b);;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(-35vh);
+}
+.project-heading h1 , .project-heading h3{
+    color: #eeeeee;
+    font-family: 'Inter', sans-serif;
+}
+.project-heading h1{
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.swiper {
+    width: 50%;
+    height: 40%;
+    position: absolute;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .slide-hover{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .slide-hover:hover{
+      background-color: #2e2e2e;
+      opacity: 0.9;
+  }
+
+  .swiper-slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* filter: brightness(80%); */
+  }
+
+  .slide-hover p{
+      opacity: 0;
+  }
+  .slide-hover a{
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+  }
+  .slide-hover:hover p{
+      opacity: 1;
+      transition: 1s;
+      position: absolute;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: medium;
+  }

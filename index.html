@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable = no">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Personal-portfolio</title>
+</head>
+<body>
+    <section id="section-navbar">
+        <div class="navBar">
+            <div class="navBarEl home">Home</div>
+            <div class="navBarEl About Me">About Me</div>
+            <div class="navBarEl Projects">Skills & Projects</div>
+            <!-- <div class="navBarEl Skills">Skills</div> -->
+            <div class="navBarEl Contact Me">Contact Me</div>
+        </div>
+    </section>
+    <section id="section-1">
+        <div class="intro">
+            <div class="mainIntro">Hi. I'm Sritam</div>
+            <div class="subIntro">I'm a post graduate in Management</div>
+            <div class="subIntro">I can help you out with Operation Management and Marketing Management</div>
+            
+        </div>
+    </section>
+    <section id="section-2">
+        <div class="section-2-container"> </div>
+        <div class="left">
+        </div>
+        <div class="right">
+            <h1 class="h1">Who am I ?</h1>
+            <p class="p">
+                I'm Ch. Sritam Praharaj, a post graduate in Management, a graduate in Mechanical Engineering and a Master Degree 
+                in Operations & Marketing, I have four Internship exposure in country’s major leading 
+                Organizations.
+                My core strength lies in my flexibility to work across functions where I have to play a key role 
+                in Operations Management and Marketing Management. 
+            </p>
+            <button><a href="./Ch. Sritam Praharaj (cv).pdf" download="Sritam's CV">Download Resume</a> </button>
+        </div>
+        
+    </section>
+    <section id="section-3">
+        <div class="project-heading">
+            <h3>Some of my recent works</h3>
+            <h1>Projects</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('./Screenshot\ \(16\).png');">
+                  <div class="slide-hover">
+                    <p>A study on company profile, Product Profile, Market awareness and Distribution network of Tupperware</p>
+                    <a href="./tupperware.pdf" download="Distribution network of Tupperware"></a>
+                  </div>
+                </div>
+              <div class="swiper-slide" style="background-image: url('./Screenshot\ \(17\).png');">
+                <div class="slide-hover">
+                  <p>Supply chain management in Indian made foreign liquor manufacturing plant of M/S Diageo India</p>
+                  <a href="./Project report.pdf" download="Supply chain management"></a>
+                </div>
+            </div>
+              <div class="swiper-slide" style="background-image: url('./Screenshot\ \(18\).png');">
+                <div class="slide-hover">
+                  <p>Supply chain management and logistic management of Amul</p>
+                  <a href="./SCM OF AMUL.pdf" download="Supply chain management"></a>
+                </div>
+            </div>
+              <!-- <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <section id="footer"></section>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: false,
+          loopFillGroupWithBlank: false,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
