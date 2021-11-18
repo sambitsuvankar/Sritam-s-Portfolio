@@ -205,17 +205,24 @@ body{
 /* Section-3 */
 
 #section-3{
-    box-sizing: border-box;
-    height: 100vh;
     width: 100vw;
+    height: 120vh;
+    background: linear-gradient(to right, #191b1b, #383a3b);;
+    box-sizing: border-box;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     overflow: hidden;
-    overflow-x: hidden;
-    background: linear-gradient(to right, #191b1b, #383a3b);;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#section-3 h2{
+    color: #eeeeee;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    transform: translateY(35vh);
 }
 
 .project-heading{
@@ -300,4 +307,108 @@ body{
       color: white;
       font-family: 'Poppins', sans-serif;
       font-size: medium;
+  }
+
+  .skills-container{
+      width: 100vw;
+      height: 20vh;
+      position: absolute;
+      transform: translateY(50vh);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+  }
+  .skill-item-container{
+      height: 80%;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .skill-item-container p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .skill-item{
+    height: 80%;
+    width: 100%;
+      transform: scale(0.7);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .item1{
+    background-size: 90%;
+  }
+  .item2{
+    background-size: 50%;
+  }
+  .item3{
+    background-size: 40%;
+  }
+  .item4{
+    background-size: 40%;
+  }
+  .item5{
+    background-size: 40%;
+  }
+
+
+  /* Section footer ----------------------------- */
+
+  #footer{
+      height: 60vh;
+      width: 100vw;
+      background: linear-gradient(to right, #191b1b, #383a3b);;
+      box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer h1{
+      
+    position: absolute;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(-20vh);
+    font-size: 2rem;
+  }
+
+  .contact-container{
+      width: 100vw;
+      height: 60%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .contact-item{
+      width: 25%;
+      height: 40%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+  }
+  .contact-item p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .contact-logo{
+    height: 90%;
+    width: 20%;
+    transform: scale(0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
   }
