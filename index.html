@@ -21,6 +21,21 @@
             <div class="navBarEl Contact Me">Contact Me</div>
         </div>
     </section>
+    <section id="navbar-hamburger" >
+      <div class="hambug">
+          <div id="hamslice1" class="hamslice"></div>
+          <div id="hamslice2" class="hamslice"></div>
+          <div id="hamslice3" class="hamslice"></div>
+      </div>
+  </section>
+  <div id="hambug-section">
+    <div class="hambug-bg">
+      <p class="home1">Home</p>
+      <p class="about">About</p>
+      <p class='skills'>Skills & Projects</p>
+      <p class="contact">Contact Me</p>
+    </div>
+  </div>
     <section id="section-1">
         <div class="intro">
             <div class="mainIntro">Hi. I'm Sritam</div>
@@ -51,23 +66,23 @@
             <h3>Some of my recent works</h3>
             <h1>Projects</h1>
         </div>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide" style="background-image: url('./Screenshot\ \(16\).png');">
                   <div class="slide-hover">
-                    <p>A study on company profile, Product Profile, Market awareness and Distribution network of Tupperware</p>
+                    <p>A study on company profile, Product Profile, Market awareness and Distribution network of Tupperware. Click on the slide to download the PDF Report</p>
                     <a href="./tupperware.pdf" download="Distribution network of Tupperware"></a>
                   </div>
                 </div>
-              <div class="swiper-slide" style="background-image: url('./Screenshot\ \(17\).png');">
+               <div class="swiper-slide" style="background-image: url('./Screenshot\ \(17\).png');">
                 <div class="slide-hover">
-                  <p>Supply chain management in Indian made foreign liquor manufacturing plant of M/S Diageo India</p>
+                  <p>Supply chain management in Indian made foreign liquor manufacturing plant of M/S Diageo India. Click on the slide to download the PDF Report</p>
                   <a href="./Project report.pdf" download="Supply chain management"></a>
                 </div>
             </div>
               <div class="swiper-slide" style="background-image: url('./Screenshot\ \(18\).png');">
                 <div class="slide-hover">
-                  <p>Supply chain management and logistic management of Amul</p>
+                  <p>Supply chain management and logistic management of Amul. Click on the slide to download the PDF Report</p>
                   <a href="./SCM OF AMUL.pdf" download="Supply chain management"></a>
                 </div>
             </div>
@@ -78,8 +93,8 @@
               <div class="swiper-slide">Slide 8</div>
               <div class="swiper-slide">Slide 9</div> -->
             </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next" style="color: black;"></div>
+              <div class="swiper-button-prev" style="color: black;"></div>
               <div class="swiper-pagination"></div>
           </div>
           <h2>My Acquired Skills</h2>
@@ -110,17 +125,22 @@
       <h1>Contact Me</h1>
       <div class="contact-container">
         <div class="contact-item">
-          <div class="contact-logo" style="background-image: url('./skillslogo/location.png');"></div>
+          <a><div class="contact-logo" style="background-image: url('./skillslogo/location.png');"></div></a>
           <p>Cuttack, Odisha, India, PIN-754207</p>
         </div>
         <div class="contact-item">
-          <div class="contact-logo" style="background-image: url('./skillslogo/mail.png');"></div>
+          <a href="mailto:praharajsritam@gmail.com" target="_blank" style="cursor: pointer;"><div class="contact-logo" style="background-image: url('./skillslogo/mail.png');"></div></a>
           <p>praharajsritam@gmail.com</p>
+          
         </div>
         <div class="contact-item">
-          <div class="contact-logo" style="background-image: url('./skillslogo/phone.png');"></div>
+          <a href="tel:+919438507167" target="_blank" style="cursor: pointer;"><div class="contact-logo" style="background-image: url('./skillslogo/phone.png');"></div></a>
           <p>(+91)9438507167</p>
+          
         </div>
+      </div>
+      <div class="copyRight">
+        <h4> ©CopyRight | Ch Sritam Praharaj </h4>
       </div>
     </section>
 
@@ -128,11 +148,11 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          loop: false,
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          slidesPerGroup: 1,
+          loop: true,
           loopFillGroupWithBlank: false,
           pagination: {
             el: ".swiper-pagination",
