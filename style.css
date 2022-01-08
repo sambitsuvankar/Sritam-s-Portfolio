@@ -356,7 +356,7 @@ body{
         z-index: 1;
         /* padding-top: 20px; */
         height: 400px;
-        width: 300px;
+        width: 100%;
         right: -20vw;
         top: 154vh;
         opacity: 0;
@@ -365,22 +365,24 @@ body{
         transition: 3s;
     }
     .right.added{
-        transform: translateX(8vw);
+        transform: translateX(0%);
         opacity: 1;
     }
     .right p {
         font-family: 'Roboto', sans-serif;
         font-size: 11px;
         line-height: 18px;
+        width: 85%;
+        margin: auto;
     }
     .right h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 800;
         font-size: 32px;
-        margin-bottom: 0px;
+        margin-bottom: 12px;
     }
     .right button{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 }
 /* ------------------------------ */
