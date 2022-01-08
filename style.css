@@ -217,6 +217,15 @@ body{
     width: 70%;
     /* text-shadow: 1px 1px 0.5px rgb(32, 196, 141); */
 }
+
+@media screen and (max-width: 1025px){
+    .intro{
+        left: 15vw;
+    }
+    .intro.after{
+        transform: translateY(-100px);
+    }
+}
 /* ------------------------------ */
 
 /* Section-2 */
@@ -326,42 +335,52 @@ body{
 
 @media screen and (max-width: 1025px){
     .left{
-        position: absolute;
+        position: static;
         z-index: 1;
         opacity: 0;
         background-image: url('./dudu.jpeg');
-        height: 29rem;
-        width: 25rem;
+        height: 60vh;
+        width: 92vw;
         background-size: cover;
         left: 50%;
-        top: 105%;
+        top: 105vh;
+        margin-right: 0px;
         border-radius: 10px;
-        box-shadow: #c9c6c6 5px 5px 10px;
-        transform: translateX(-50%) scale(0.8) !important;
+        box-shadow: #c9c6c6 0px 0px 0px;
+        transform: translateX(3%) scale(0.8) !important;
         transition: 3s;
     }
     .right{
         color: rgb(228, 222, 222);
-        position: absolute;
+        position: static;
         z-index: 1;
         /* padding-top: 20px; */
-        height: 39vh;
-        width: 80vw;
+        height: 400px;
+        width: 300px;
         right: -20vw;
-        top: 154%;
+        top: 154vh;
         opacity: 0;
         text-align: center;
         line-height: 45px;
         transition: 3s;
     }
+    .right.added{
+        transform: translateX(8vw);
+        opacity: 1;
+    }
     .right p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 11px;
+        line-height: 18px;
     }
     .right h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 800;
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+    .right button{
+        margin-top: 1rem;
     }
 }
 /* ------------------------------ */
